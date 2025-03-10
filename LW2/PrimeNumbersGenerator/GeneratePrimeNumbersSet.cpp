@@ -4,8 +4,8 @@
 std::set<int> GeneratePrimeNumbersSet(int upperBound)
 {
     std::set<int> primeNumbers;
-    //åñëè upperBound 1 èëè íèæå, âîçâðàùàåì ïóñòîå ìíîæåñòâî
-    //ò.ê. 0 è 1 íå ÿâëÿþòñÿ ïðîñòûìè ÷èñëàìè
+    //если upperBound 1 или ниже, возвращаем пустое множество
+    //т.к. 0 и 1 не являются простыми числами
     if (upperBound <= 1)
     {
         return primeNumbers;
